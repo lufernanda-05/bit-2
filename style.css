@@ -1,0 +1,196 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.logo {
+  padding: 1%; 
+  width: 100%;   
+  height: auto;     
+  margin: 1%;
+}
+
+h1 {
+  background: linear-gradient(90deg, rgb(246, 199, 236), rgb(0, 23, 105));
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: wave 2s linear infinite;
+  text-align: center;
+}
+
+nav {
+  padding-top: 1%;
+  padding-block: 1%;
+  background: linear-gradient(rgb(186, 229, 246), rgb(247, 193, 238));
+  border-radius: 10%;
+  margin: 2%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+}
+
+/* Título animado */
+@keyframes wave {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+.github-link {/*boton*/
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #f18dcb;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 3px 8px rgba(252, 176, 240, 0.6);
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.github-link:hover {
+  background-color: #97ebfa;
+  box-shadow: 0 5px 15px rgba(128, 235, 243, 0.8);
+}
+
+/* Icono de GitHub*/
+.github-link i.fa-brands.fa-github {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* Estilos tarjetas */
+.card {
+  background: linear-gradient(115deg, #c9edc3,rgb(189, 214, 248));
+  border-radius: 15px;
+  margin: 10px;
+  padding: 20px;
+  width: calc(25% - 40px);
+  box-sizing: border-box;
+  color: rgb(3, 3, 3);
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #04518f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.profile-image img {
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.card h2 {
+  color: #2dbdf1;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.card p {
+  margin: 6px 0;
+  color: #0a0a0add;
+  font-size: 0.95rem;
+}
+
+.card p strong {
+  color: #2dbdf1;
+}
+
+.project {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.project h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #2dbdf1;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.project p {
+  color: #080808;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .card {
+    width: calc(33.33% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 575px) {
+  .card {
+    width: calc(100% - 40px);
+  }
+}
+footer {
+  background-color: #3a52f3;
+  color: #cbd5e1;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: inset 0 1px 4px rgba(255,255,255,0.1);
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+  margin: 1%;
+}
+
+.footer-text {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-text i {
+  font-size: 1.3rem;
+}
+  
+footer small {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
