@@ -1,4 +1,7 @@
 'use strict';
+
+const nom = prompt(" 👋 ¡Hola! ingresa tu nombre: ");
+console.log(" Bienvenid@", nom, "a la página de contacto de BIT.");
 // Hacemos la petición
 fetch('data.json')
     .then(response => response.json()) // Convierte la respuesta en JSON
@@ -46,4 +49,3 @@ fetch('data.json')
         });
     })
     .catch(error => console.error('Error al cargar el archivo JSON:', error));
-

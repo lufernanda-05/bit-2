@@ -229,6 +229,15 @@ nav {
     width: calc(100% - 40px);
   }
 }
+.info-box {
+  width: 200px; 
+  margin: 0 auto;
+  text-align: center; /* centra el texto dentro de la caja */
+  padding: 10px;
+  border: 1px solid #000; 
+  background-color: #97ebfa;
+}
+
 footer {
   background-color: #3a52f3;
   color: #cbd5e1;
