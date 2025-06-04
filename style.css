@@ -56,11 +56,16 @@ h2{
     padding: 12px 8px;
     border-bottom: 2px solid #ddd;
     text-align: left;
+    border: 1px solid 
+    rgb(88, 224, 248);
+
   }
   tbody td {
     padding: 12px 10px;
     vertical-align: top;
     border-bottom: 1px solid #eee;
+    border: 1px solid 
+    rgb(88, 224, 248);
   }
   tbody tr:hover {
     background-color: #f5faff;
@@ -229,6 +234,32 @@ nav {
     width: calc(100% - 40px);
   }
 }
+
+#filterHighScore {
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(37, 117, 252, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+#filterHighScore:hover {
+  background-color: #6a11cb;
+  box-shadow: 0 6px 14px rgba(106, 17, 203, 0.6);
+}
+
+#filterHighScore:focus {
+  outline: 3px solid #72a3ed;
+  outline-offset: 2px;
+}
+
 .info-box {
   width: 200px; 
   margin: 0 auto;
