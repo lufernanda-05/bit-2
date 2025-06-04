@@ -6,15 +6,15 @@ fetch('data.json')
         // Contenedor de todos los estudiantes
         const container = document.getElementById('student-container');
 
-        // Iteramos cada estudiante
+        // datos de cada estudiante
         data.forEach(student => {
-            // Usuario de GitHub del estudiante
+            // Usuario de GitHub
             const githubUsername = student.usernameGithub;
 
-            // Link de GitHub para imagen perfil (o placeholder)
+            // Link de GitHub para imagen perfil
             const profileImageUrl = githubUsername ? `https://github.com/${githubUsername}.png?size=100` : 'https://via.placeholder.com/100';
 
-            // Construimos el enlace visible a GitHub con icono y texto
+            //enlace GitHub 
             const githubLinkHTML = githubUsername
                 ? `<a href="https://github.com/${githubUsername}" target="_blank" rel="noopener" class="github-link">
                       <i class="fa-brands fa-github"></i>GitHub
@@ -46,3 +46,4 @@ fetch('data.json')
         });
     })
     .catch(error => console.error('Error al cargar el archivo JSON:', error));
+

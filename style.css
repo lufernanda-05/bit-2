@@ -1,10 +1,14 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px;
+    background: #f9fafb;
+    color: #333;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f4f4f4;
 
+  }
 .logo {
   padding: 1%; 
   width: 100%;   
@@ -21,7 +25,57 @@ h1 {
   animation: wave 2s linear infinite;
   text-align: center;
 }
-
+h2{
+  text-align: center;
+  color: #f18dcb;
+}
+  .table-container {
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  thead th[colspan] {
+    background: #4a90e2;
+    color: #fff;
+    font-size: 1.8em;
+    padding: 16px 0;
+    text-align: center;
+  }
+  thead th {
+    background: #f0f4f8;
+    color: #4a4a4a;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 12px 8px;
+    border-bottom: 2px solid #ddd;
+    text-align: left;
+  }
+  tbody td {
+    padding: 12px 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #eee;
+  }
+  tbody tr:hover {
+    background-color: #f5faff;
+  }
+  /* Estilos para listas ordenadas */
+  td ol {
+    padding-left: 20px;
+    margin: 0;
+  }
+  td:nth-child(3) ol li {
+    margin-bottom: 10px; /* Más espacio en columna 400 */
+  }
+  td ol li {
+    margin-bottom: 6px;
+  }
 nav {
   padding-top: 1%;
   padding-block: 1%;
@@ -144,6 +198,20 @@ nav {
 }
 
 /* Responsive */
+/*tabla*/
+@media (max-width: 600px) {
+    body {
+      margin: 20px 10px;
+    }
+    thead th[colspan] {
+      font-size: 1.4em;
+      padding: 12px 0;
+    }
+    thead th, tbody td {
+      font-size: 0.9em;
+      padding: 8px 6px;
+    }
+  }
 @media (max-width: 992px) {
   .card {
     width: calc(33.33% - 40px);
